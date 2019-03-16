@@ -1,0 +1,154 @@
+html {
+    background-color:#ccc;
+}
+
+div.wrapper {
+    background-color:#fff;
+    overflow:auto;
+}
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+}
+
+.logo {
+    color:red;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+  background-color: #DC143C;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button:active {
+  background-color: #DC143C;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+footer {
+	clear:both;
+}
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:900px) {
+	
+   div.wrapper {
+		width:80%;
+		margin:auto;
+	}
+
+    section {
+		width:55%;
+		float:left;
+        margin-left: 1.5em;
+	}
+	
+     aside {	
+		width:34%;
+		float:right;
+	}
+			
+	
+    img.desktop {
+      		 float:left;
+       		width:80%;
+   	 }
+    
+    img.tablet, img.phone {
+       		 display:none;
+    	}  
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:899px) {
+	
+	section {
+		width:55%;
+		float:left;
+        margin-left: 1.5em;
+	}
+	
+	aside {	
+		width:39%;
+		float:right;
+	}
+	
+            img.tablet {
+       		width:100%;
+           }
+    
+           img.phone, img.desktop {
+        		display:none;
+           } 
+    
+    /* Change background color of navigation on selected page */
+           ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;
+          }
+  }
+
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    img.phone {
+       		width:90%;
+             
+    }
+    
+    h3 {
+        display:none;
+    }
+    
+    img.tablet, img.desktop {
+        		display:none;
+    }  
+
+}

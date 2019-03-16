@@ -1,0 +1,213 @@
+html {
+    background-color:#ccc;
+}
+
+div.wrapper {
+    background-color:#fff;
+    overflow:auto;
+    max-width:1280px;
+    margin:0 auto; /*auto will center the element, it just work for left and right*/
+
+}
+
+
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+    font-family: cursive;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #DC143C;
+}
+
+p {
+    text-align: justify;
+    padding: 0 1em;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+
+.code {
+    background-color:#36486b;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+.logo {
+    color:red;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+/* Embed Responsively Rules! */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ img {
+    width:100%;
+   	 }
+
+dt {
+    text-align: left;
+    margin: 0;
+    
+}
+
+dd {
+    text-align: left;
+    margin: 1em;
+}
+
+ol {
+    padding: 0 5px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 4em;
+}
+
+div.dot iframe {
+    border:0;
+    overflow:hidden;
+}
+aside {
+    text-align: justify;
+    padding: 1em;
+    line-height: 1.5em;
+   
+}
+
+
+.button {
+  background-color: #DC143C;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button:active {
+  background-color: #DC143C;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+footer {
+	clear:both;
+}
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:900px) {
+	
+   div.wrapper {
+		width:80%;
+		margin:auto;
+	}
+
+    section {
+		width:55%;
+		float:left;
+        margin-left: 1.5em;
+	}
+	
+     aside {	
+		width:34%;
+		float:right;
+	}
+		
+    .embed-container.agenda-view {
+    display: none;
+    }
+	
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:746px) and (max-width:899px) {
+	
+	section {
+		width:50%;
+		float:left;
+        margin-left: 1.5em;
+	}
+    
+	aside {	
+		width:36%;
+		float:right;
+	}
+    .embed-container.month-view {
+    display: none;
+    }
+	
+
+    /* Change background color of navigation on selected page */
+           ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;
+          }
+  }
+
+
+/* PHONE */
+@media all and (max-width:745px) {
+
+    div.wrapper {
+        width: 90%;
+    }
+    
+    .month-view {
+    display: none;
+    }
+  
+       section {
+        float:none;
+        width:100%;
+}
+
+    aside {
+        float:none;
+        width:100%;
+}
+    
+
+}

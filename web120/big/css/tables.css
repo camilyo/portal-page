@@ -1,0 +1,68 @@
+/* styles for tables */
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2em;
+    
+}
+
+
+/*tr {
+    vertical-align: top;
+}
+*/
+
+tr:nth-child(even) {
+    background-color:#c0c0c0;
+    color:#000;
+}
+
+thead tr {
+    background-color:#ccc;
+    color: #000;
+    text-align: center;
+}
+
+td, th {
+    border:1px solid #000;
+    padding: .5em;
+    text-align: left;
+}
+
+th {
+    text-align: center;
+}
+.col1 {
+    word-wrap: normal
+}
+
+table.client td {
+    margin: 2em;
+    text-align: left;
+    background-color: #FFF
+    
+}
+
+table.client th {
+    text-align: left;
+    width: 20%;
+    background-color: #ccc;
+    color: #000;
+}
+
+table.audience td {
+    margin: 2em;
+    text-align: left;  
+    background-color: #FFF
+    
+    
+}
+
+table.audience th {
+    width: 30%;
+    background-color: #ccc;
+    color: #000;
+}
